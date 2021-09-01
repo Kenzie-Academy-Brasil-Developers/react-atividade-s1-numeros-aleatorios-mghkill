@@ -1,6 +1,6 @@
 import {useState} from "react"
 import "./style.css"
-const Generate = () => {
+const Generator = () => {
 
     const number = () =>{
         return Math.floor(Math.random() * 100 ) + 1
@@ -14,10 +14,10 @@ const Generate = () => {
                 {count}
             </div>
 
-            <button onClick={() => setCount(number())} className="buttonGenerate">
-                Generate Number
+            <button onClick={() => setCount(number())} className="buttonGenerator">
+                Generator Number
             </button>
         </>
     );
 }
-export default Generate
+export default Generator
